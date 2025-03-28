@@ -1,0 +1,368 @@
+type: collection.insomnia.rest/5.0
+name: Snoopy
+meta:
+  id: wrk_9e6478729f634c309f61f6b968e7c0ca
+  created: 1743170593690
+  modified: 1743170593690
+collection:
+  - name: Clientes
+    meta:
+      id: fld_e88d3c3eca5e48488d74937cf1725e2e
+      created: 1743170604734
+      modified: 1743170604734
+      sortKey: -1743170604734
+    children:
+      - url: http://localhost:3001/clientes/2
+        name: Delete
+        meta:
+          id: req_29b07aa3c0e94525aada58f92d4e2ab4
+          created: 1743170606391
+          modified: 1743171589984
+          isPrivate: false
+          sortKey: -1743170606391
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/clientes/1
+        name: Put
+        meta:
+          id: req_54687d1a1e954d23baf3209e9076d2f8
+          created: 1743170608415
+          modified: 1743170833159
+          isPrivate: false
+          sortKey: -1743170608415
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "cpf": "12345678900",
+              "nome": "João Pereira"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/clientes
+        name: Post
+        meta:
+          id: req_77b06fcf5dc4425cb8513b992ff5836f
+          created: 1743170610265
+          modified: 1743171724034
+          isPrivate: false
+          sortKey: -1743170610265
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "cpf": "12345678904",
+              "nome": "Guilherme"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/clientes/3
+        name: ReadOne
+        meta:
+          id: req_439ad3998d264a0ca7c2474ff71f7057
+          created: 1743170611643
+          modified: 1743172186296
+          isPrivate: false
+          sortKey: -1743170611643
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/clientes
+        name: Read
+        meta:
+          id: req_26607155bf65495e82704285aeb29930
+          created: 1743170613270
+          modified: 1743170708106
+          isPrivate: false
+          sortKey: -1743170613270
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Telefones
+    meta:
+      id: fld_a53fb62aa9484130abdab74ee37eaac9
+      created: 1743170921331
+      modified: 1743170921331
+      sortKey: -1743170921331
+    children:
+      - url: http://localhost:3001/telefones/2
+        name: Delete
+        meta:
+          id: req_bf992a908f3e4094980314d8bb9684b9
+          created: 1743170922866
+          modified: 1743171607524
+          isPrivate: false
+          sortKey: -1743170922866
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/telefones/1
+        name: Put
+        meta:
+          id: req_8d0618cb48df4b1f9c2b0afdf130d0b8
+          created: 1743170924182
+          modified: 1743171091314
+          isPrivate: false
+          sortKey: -1743170924182
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "clienteId": 2,
+              "numero": "11987654322",
+              "tipo": "celular"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/telefones
+        name: Post
+        meta:
+          id: req_9eec632080cd4d7787b009e2f8064b1e
+          created: 1743170925494
+          modified: 1743171879762
+          isPrivate: false
+          sortKey: -1743170925494
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "clienteId": 7,
+              "numero": "19997586097",
+              "tipo": "celular"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/telefones
+        name: Read
+        meta:
+          id: req_a9603976eef5428bae2af00d57bd2550
+          created: 1743170926571
+          modified: 1743171052447
+          isPrivate: false
+          sortKey: -1743170926571
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pedidos
+    meta:
+      id: fld_6a7897ee8f5945f19c32594ed0ee8f9a
+      created: 1743171114631
+      modified: 1743171114631
+      sortKey: -1743171114631
+    children:
+      - url: http://localhost:3001/pedidos/3
+        name: Delete
+        meta:
+          id: req_39c3da1712ed43d8bd2836ba21cc765b
+          created: 1743171116473
+          modified: 1743171600586
+          isPrivate: false
+          sortKey: -1743171116473
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos/1
+        name: Put
+        meta:
+          id: req_1ffe9cf93af84f30b35cd2cb19301926
+          created: 1743171117735
+          modified: 1743171297861
+          isPrivate: false
+          sortKey: -1743171117735
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "clienteId": 2,
+              "data": "2025-03-28T12:30:00.000Z",
+              "produto": "Produto",
+              "qtd": 3,
+              "preco": 100.00,
+              "subTotal": 300.00
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: Post
+        meta:
+          id: req_b5ef62c2b79048e793c75bfe765c9779
+          created: 1743171121158
+          modified: 1743172081037
+          isPrivate: false
+          sortKey: -1743171121158
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "clienteId": 7,
+              "data": "2025-03-30T12:30:00.000Z",
+              "produto": "Cama para Cachorro",
+              "qtd": 1,
+              "preco": 30.00
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: Read
+        meta:
+          id: req_6f2d93075cdb45bdaccdc804c50ec3cc
+          created: 1743171122446
+          modified: 1743171161153
+          isPrivate: false
+          sortKey: -1743171122446
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_147108ec280dd281c64102cbbc6ed02b0aed0c31
+    created: 1743170593708
+    modified: 1743170593708
+environments:
+  name: Base Environment
+  meta:
+    id: env_147108ec280dd281c64102cbbc6ed02b0aed0c31
+    created: 1743170593703
+    modified: 1743170593703
+    isPrivate: false
