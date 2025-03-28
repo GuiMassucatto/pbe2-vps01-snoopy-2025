@@ -12,12 +12,12 @@ collection:
       modified: 1743170604734
       sortKey: -1743170604734
     children:
-      - url: http://localhost:3001/clientes/2
+      - url: http://localhost:3001/clientes/3
         name: Delete
         meta:
           id: req_29b07aa3c0e94525aada58f92d4e2ab4
           created: 1743170606391
-          modified: 1743171589984
+          modified: 1743180737252
           isPrivate: false
           sortKey: -1743170606391
         method: DELETE
@@ -32,12 +32,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3001/clientes/1
+      - url: http://localhost:3001/clientes/3
         name: Put
         meta:
           id: req_54687d1a1e954d23baf3209e9076d2f8
           created: 1743170608415
-          modified: 1743170833159
+          modified: 1743180731149
           isPrivate: false
           sortKey: -1743170608415
         method: PUT
@@ -46,7 +46,7 @@ collection:
           text: |
             {
               "cpf": "12345678900",
-              "nome": "João Pereira"
+              "nome": "João Pedro"
             }
         headers:
           - name: Content-Type
@@ -248,12 +248,12 @@ collection:
       modified: 1743171114631
       sortKey: -1743171114631
     children:
-      - url: http://localhost:3001/pedidos/3
+      - url: http://localhost:3001/pedidos/6
         name: Delete
         meta:
           id: req_39c3da1712ed43d8bd2836ba21cc765b
           created: 1743171116473
-          modified: 1743171600586
+          modified: 1743180893405
           isPrivate: false
           sortKey: -1743171116473
         method: DELETE
@@ -268,12 +268,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3001/pedidos/1
+      - url: http://localhost:3001/pedidos/6
         name: Put
         meta:
           id: req_1ffe9cf93af84f30b35cd2cb19301926
           created: 1743171117735
-          modified: 1743171297861
+          modified: 1743180884187
           isPrivate: false
           sortKey: -1743171117735
         method: PUT
@@ -281,11 +281,11 @@ collection:
           mimeType: application/json
           text: |
             {
-              "clienteId": 2,
+              "clienteId": 4,
               "data": "2025-03-28T12:30:00.000Z",
-              "produto": "Produto",
+              "produto": "Ração de Frango",
               "qtd": 3,
-              "preco": 100.00,
+              "preco": 30.00,
               "subTotal": 300.00
             }
         headers:
